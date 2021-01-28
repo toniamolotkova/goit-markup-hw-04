@@ -111,11 +111,16 @@ img {
 }
 
 .header .link {
+  display: inline-block;
+  padding: 32px 0;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
 
   color: var(--head-text-color);
+
+  cursor: pointer;
 }
 
 .header .link:hover,
@@ -136,8 +141,11 @@ img {
 .contacts .link {
   display: flex;
   align-items: center;
+  padding: 32px 0;
 
   color: var(--paragraph-text-color);
+
+  cursor: pointer;
 }
 
 .contact-icons {
@@ -148,13 +156,6 @@ img {
 .contact-icons:hover,
 .contact-icons:focus {
   fill: var(--accent-color);
-}
-
-.header-item {
-  display: inline-block;
-  padding: 32px 0;
-
-  cursor: pointer;
 }
 
 .header-item:not(:last-child) {
@@ -500,8 +501,20 @@ img {
   width: 370px;
 }
 
-.project-item:hover,
-.project-item:focus {
+/*.project-item:hover {
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+
+  cursor: pointer;
+}*/
+.project-item .link {
+  display: block;
+  width: 370px;
+}
+
+.project-item .link:hover,
+.project-item .link:focus {
   border: 1px solid #eeeeee;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
